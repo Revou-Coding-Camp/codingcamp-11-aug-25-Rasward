@@ -1,0 +1,27 @@
+.main-logo {
+    background-image: url(https://picsum.photos/200);
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-img {
+    width: 250px;
+    height: 200px;
+    background-image: url('https://picsum.photos/200');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}    
+
+.cursor {
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+
+

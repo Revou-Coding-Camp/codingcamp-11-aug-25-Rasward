@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teman Ngoding</title>
+
+    <!--CSS External-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Tailwind CSS-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+
+    <!--Header-->
+    <header class="flex  items-center justify-between p-[16px] bg-green-200">
+        <!--Logo Icon-->
+        <div class="bg-cyan-500 rounded-full h-[50px] w-[50px] main-logo"></div>
+        <nav>
+            <ul class="flex gap-[8px]">
+                <li><a href="#home-page" class="text-gray-700 border py-[4px] px-[8px] rounded-[8px] hover:text-blue-700">Home</a></li>
+                <li><a href="#our-profile" class="text-gray-700 border py-[4px] px-[8px] rounded-[8px] hover:text-blue-700">Our Profile</a></li>
+                <li><a href="#portfolio" class="text-gray-700 border py-[4px] px-[8px] rounded-[8px] hover:text-blue-700">Portfolio</a></li>
+                <li><a href="#message-us" class="text-gray-700 border py-[4px] px-[8px] rounded-[8px] hover:text-blue-700">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr/>
+
+    <!--Main Content-->
+    <main>
+
+        <!--Home-->
+        <section id="home-page" class="h-[500px] bg-gray-200">
+            <div class="py-5 px-9 h-full">
+                <h1 class="text-2xl font-bold text-gray-800">Hello <span id="user-access">User</span>!, Welcome to TemanNgoding.</h1>
+                <h2 class="italic px-1">This is a Collaboration Website.</h2>
+            </div>
+        </section>
+
+        <!--Our Profile-->
+        <section id="our-profile" class="h-[400px] bg-green-200">
+            <header>
+                <h1 class="py-5 px-9 text-3xl font-bold text-gray-800">Our Profile</h1>
+            </header>
+            
+            <!--Image-->
+            <div class="flex justify-center gap-18 mt-4">
+                <div class="profile-img"></div>
+                <div class="profile-img"></div>
+                <div class="profile-img"></div>
+            </div>
+
+            <!--Teks-->
+            <div>
+                <p class="py-12 px-13 text-gray-600 text-center">
+                We are a team of enthusiastic and friendly individuals dedicated to delivering the best results for your project.</p>
+            </div>
+        </section>
+
+        
+        <!--Message Us-->
+        <section id="message-us" class="h-[450px] bg-gray-200 flex">
+            <div>
+                <header>
+                    <h1 class="py-5 px-9 text-3xl font-bold text-gray-800">Message Us</h1>
+                </header>
+    
+                <form class="px-15 py-1 space-y-1">
+                    <!-- Name -->
+                    <div class="flex gap-2 max-w-100">
+                        <label for="name" class="w-24 text-gray-700">Name:</label>
+                        <input type="text" id="name" placeholder="Write your name..."
+                            class="border border-gray-500 rounded-md p-2 w-full placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    </div>
+    
+                    <!-- Date of Birth -->
+                    <div class="flex gap-2 max-w-100">
+                        <label for="dob" class="w-24 text-gray-700">Date of Birth:</label>
+                        <input type="date" id="dob"
+                            class="border border-gray-500 rounded-md p-2 w-full placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    </div>
+    
+                    <!-- Gender -->
+                    <div class="flex gap-2">
+                        <label class="w-24 text-gray-700">Gender:</label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="gender" value="laki-laki"> Laki-laki
+                        </label>
+                        <label class="flex items-center gap-2">
+                            <input type="radio" name="gender" value="perempuan"> Perempuan
+                        </label>
+                    </div>
+    
+                    <!-- Message -->
+                    <div class="flex flex-col max-w-100">
+                        <label for="user-message" class="text-gray-700 mb-1">Message:</label>
+                        <textarea id="user-message" placeholder="Write your message here.."
+                            class="border border-gray-500 rounded-md p-2 h-24 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+                    </div>
+    
+                    <!-- Button -->
+                    <div>
+                        <button type="button" id="sendBttn"
+                            class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition">Send</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Let's Teks-->
+            <div class="w-1/2 flex items-center justify-center">
+                <h2 class="text-5xl font-bold text-gray-800">
+                    Let's 
+                    <span class="relative">
+                    <span id="changing-word" class="inline-block min-w-[11ch]"></span>
+                    <span class="cursor absolute">|</span>
+                    </span>
+                </h2>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!--Footer-->
+    <footer class="text-center">
+        <span>&copy; 2025 TemanNgoding. All rights reserved.</span>
+    </footer>
+
+    <!--JS External-->
+    <script src="js/script.js"></script>
+    
+</body>
+
+</html>
